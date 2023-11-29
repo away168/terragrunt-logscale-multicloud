@@ -19,7 +19,7 @@ remote_state {
   }
   config = {
     bucket         = "${local.backend.bucket}"
-    key            = "${local.backend.keyprefix}${path_relative_to_include()}/terraform.tfstate"
+    key            = "/${path_relative_to_include()}/terraform.tfstate"
     region         = "${local.backend.region}"
     encrypt        = true
     dynamodb_table = "${local.backend.table}"
