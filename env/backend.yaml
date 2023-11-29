@@ -1,6 +1,6 @@
 type: s3
-bucket: cs-ls-ps-env0-state
-table: cs-ls-ps-env0-state
-region: us-east-1
+bucket: env0-acme-tfstate
+table: env0-acme-tfstate-lock
+region: us-west-2
 # If a prefix is used ensure a single trailing slash is present
 keyprefix: /
